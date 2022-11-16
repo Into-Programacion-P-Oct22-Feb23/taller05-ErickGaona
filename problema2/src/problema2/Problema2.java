@@ -27,7 +27,7 @@ public class Problema2 {
         double costo;
         double precio_unidad;
         double descuento; //  10%
-        double costo_total;
+        double costo_total ;
 
         System.out.println("Digite el costo del articulo");
         precio_unidad = entrada.nextDouble();
@@ -41,11 +41,15 @@ public class Problema2 {
            descuento = (costo *15 ) /100 ; 
            costo_total = costo - descuento;
             
-           System.out.println("El total a cancelar es: "+ costo_total);
+           System.out.printf("El costo del pedido es: %.1f, la cantidad"
+                   + " requerida es: %d, y el precio por unidad es: %.1f"
+                   , costo_total, cantidad, precio_unidad);
         
         }else{
         
-           System.out.println("El total a cancelar es: "+ costo);
+           System.out.printf("El costo del pedido es: %.1f\nla cantidad"
+                   + " requerida es: %d\ny el precio por unidad es: %.1f\n"
+                   , costo, cantidad, precio_unidad);
     }
     
 }

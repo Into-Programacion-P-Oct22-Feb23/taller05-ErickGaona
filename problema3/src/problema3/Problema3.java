@@ -24,11 +24,7 @@ public class Problema3 {
 
         String marca;
         boolean salir = false;
-        String Alemania = null;
-        String Italia;
-        String Japon;
         int origen; //Guardaremos la opcion del usuario
-
         double costo = 0;
         double impuesto = 0; //  10%
         double costo_total;
