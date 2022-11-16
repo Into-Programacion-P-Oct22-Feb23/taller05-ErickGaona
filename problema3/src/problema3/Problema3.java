@@ -64,11 +64,13 @@ public class Problema3 {
             } else {
                 if (origen == 2) {
                     impuesto = (costo * 0.30);
+                    salir =true;
                 }
 
             }
             if (origen == 3) {
                 impuesto = (costo * 0.15);
+                salir =true;
 
             } else {
                 if (origen == 4) {
@@ -83,9 +85,11 @@ public class Problema3 {
 
         }
         costo_total = costo + impuesto;
-        System.out.println("Costo auto es : "+costo);
-        System.out.println("Impuesto a pagar es : "+impuesto);
-        System.out.println("Costo total del auto es : "+costo_total);
+        System.out.printf("El impuesto por pagar es: %.1f\nel precio venta"
+                + " incluido impuesto es de: %.1f\n", impuesto,costo_total);
+        //System.out.println("Costo auto es : "+costo);
+        //System.out.println("Impuesto a pagar es : "+impuesto);
+       // System.out.println("Costo total del auto es : "+costo_total);
 
     }
 
