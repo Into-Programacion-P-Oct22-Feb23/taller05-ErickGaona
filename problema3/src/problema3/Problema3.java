@@ -24,6 +24,7 @@ public class Problema3 {
 
         String marca;
         boolean salir = false;
+        //String origen;
         int origen; //Guardaremos la opcion del usuario
         double costo = 0;
         double impuesto = 0; //  10%
@@ -31,7 +32,14 @@ public class Problema3 {
 
         System.out.println("Digite la marca del automovil");
         marca = entrada.nextLine();
-
+        /* // Posible segunda solucion
+        System.out.println("Digite la marca del automovil");
+        origen = entrada.nextLine();
+        
+        if(origen.equals("Alemania")){
+            System.out.println("hola");
+        }
+*/
         while (!salir) {
 
             System.out.println("1. Alemania");
@@ -47,7 +55,9 @@ public class Problema3 {
             System.out.println("Digite el costo del automovil");
             costo = entrada.nextDouble();
 
-            //costo = precio_unidad * cantidad;
+            
+            
+            
             if (origen == 1) {
                 impuesto = (costo * 0.20);
 
